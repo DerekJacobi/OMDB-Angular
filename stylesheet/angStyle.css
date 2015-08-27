@@ -24,12 +24,19 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-input[type=text] {
-  color: blue;
+.movie-title {
+  color: white;
   border: none;
   background-color: lightgrey;
   width: 50%;
   height: 100px;
+  transition: 1s ease all;
+  font-size: xx-large;
+}
+
+.searchSize  {
+  width: 100%;
+  height: 50px;
 }
 
 .search {
