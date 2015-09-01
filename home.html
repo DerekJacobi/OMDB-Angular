@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="omdb">
   <head>
     <meta charset="utf-8">
     <title>OMDB Angular App</title>
     <link rel="stylesheet" type="text/css" href="./stylesheet/angStyle.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
     <script src="./scripts/ang.js"></script>
     <script src="./scripts/jquery.js"></script>
   </head>
-  <body>
 
     <div class='search'>
-      <input type="text" placeholder="Enter movie name" class="movie-title">
-        <button id="submit" ng-click="search()">
-          Submit
-        </button>
+      <body ng-controller='MovieController as movieCtrl'>
+
+      <form ng-submit='movieCtrl.formAction()'>
+
+        <input type="text" placeholder="Enter movie name" class="movie-title" ng-model='movieCtrl.movieSearch'>
+          <button id="submit" ng-click="search()">
+            Submit
+          </button>
+
+      </form>
+      <ul>
+        <li>Title:</li>
+        <li ng-bind="movieTitle"</li>
+          <li>Plot:</li>
+        <li ng-bind="plot"</li>
+          <li>Actors:</li>
+        <li ng-bind="actors"</li>
+      </ul>
     </div>
 
   </body>
