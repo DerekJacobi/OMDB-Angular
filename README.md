@@ -1,2 +1,3 @@
-# IMDB-Angular
-IMDB search app built using angular.js
+
+# OMDB-Angular
+OMDB movie search using Angular.js
