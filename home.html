@@ -16,7 +16,7 @@
 
       <form ng-submit='movieCtrl.formAction()'>
 
-        <input type="text" placeholder="Enter movie name" class="movie-title" ng-model='movieCtrl.movieSearch'>
+        <input type="text" placeholder="Enter movie name" class="movie-title" ng-keypress="movieCtrl.formAction()" ng-model='movieCtrl.movieSearch'>
           <button id="submit" ng-click="search()">
             Submit
           </button>
