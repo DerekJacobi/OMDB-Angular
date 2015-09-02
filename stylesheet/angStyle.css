@@ -57,7 +57,6 @@ form {
   align-items: center;
   flex-direction: column;
   margin-top: 1%;
-  margin-bottom: 25%;
   transition: 1s ease all;
 }
 
@@ -65,15 +64,29 @@ li {
 	list-style: none;
 }
 
+img {
+	height: 25%;
+	width: 25%;
+}
+
 #movieList {
-	margin-top: 5%;
 	background-color: lightgrey;
 	width: 25%;
 	padding: 10px;
+	margin-left: 10%;
+}
+
+#movieInfo {
+	margin-left: 10%;
+	display: flex;
 }
 
 .movieInList {
 	color: white;
 	border: 1px solid yellow;
 	margin-bottom: 10px;
+}
+
+#movieDivs {
+	display: flex;
 }

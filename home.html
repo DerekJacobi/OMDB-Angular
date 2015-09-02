@@ -22,28 +22,31 @@
           </button>
 
       </form>
+    </div>
 
-      <!-- Display list of movies from search -->
-      <div id='movieList'>
-        <h1>Select a movie:</h1>
-        <h3>Searching for: <span ng-bind="movieCtrl.movieSearch"></span></h3>
+      <div id="movieDivs">
+        <!-- Display list of movies from search -->
+        <div id='movieList'>
+          <h3>Search Results for: <span ng-bind="movieCtrl.movieSearch"></span></h3>
 
-        <div ng-repeat="movie in movies" class="movieInList">
-          <li ng-click="movieCtrl.movieSelect(movie.imdbID)">{{movie.Title}}  ({{movie.Year}})</li>
-        </div>
-
-      </div>
-
-      <div id='movieInfo'>
-        <h1>Movie Data:</h1>
-        <div ng-repeat="movie in movie">
-          <p>{{movie.Title}}</p>
-          <p>{{movie.Year}}</p>
-          <p>{{movie.Actors}}</p>
+          <div ng-repeat="movie in movies" class="movieInList">
+            <li ng-click="movieCtrl.movieSelect(movie.imdbID)">{{movie.Title}}  ({{movie.Year}})</li>
+          </div>
 
         </div>
-      </div>
 
+        <div id='movieInfo'>
+            <img ng-src="{{movie.Poster}}"/>
+            <div>
+              <span>{{movie.Title}}</span>
+              <span>({{movie.Year}})</span>
+              <p><span>{{movie.Rated}}</span> | <span>{{movie.Runtime}}</span> | <span>{{movie.Genre}}</span> | <span>{{movie.Released}}</span></p>
+              <p ng-bind='movie.Actors'></p>
+              <p ng-bind='movie.Plot'></p>
+            </div>
+          </div>
+        </div>
+      </div>
 
   </body>
 </html>

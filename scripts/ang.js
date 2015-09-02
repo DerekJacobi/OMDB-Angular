@@ -14,8 +14,8 @@ app.controller('MovieController', function($scope, $http){
   this.movieSelect = function(imdbID){
     $http.get('https://www.omdbapi.com/?i=' + imdbID + '&y=&plot=short&r=json').
       then(function(data){
-        console.log(data);
-        $scope.movie = data;
+        console.log(data.data);
+        $scope.movie = data.data;
       });
   };
 
