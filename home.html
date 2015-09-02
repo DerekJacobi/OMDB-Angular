@@ -10,28 +10,38 @@
     <script src="./scripts/ang.js"></script>
     <script src="./scripts/jquery.js"></script>
   </head>
-
+  <!-- Movie Search Box -->
     <div class='search'>
       <body ng-controller='MovieController as movieCtrl'>
 
       <form ng-submit='movieCtrl.formAction()'>
 
         <input type="text" placeholder="Enter movie name" class="movie-title" ng-keypress="movieCtrl.formAction()" ng-model='movieCtrl.movieSearch'>
-          <button id="submit" ng-click="search()">
+          <button id="submit">
             Submit
           </button>
 
       </form>
 
-
+      <!-- Display list of movies from search -->
       <div id='movieList'>
         <h1>Select a movie:</h1>
         <h3>Searching for: <span ng-bind="movieCtrl.movieSearch"></span></h3>
 
         <div ng-repeat="movie in movies" class="movieInList">
-          <a href="#">{{movie.Title}}  ({{movie.Year}})</a>
+          <li ng-click="movieCtrl.movieSelect(movie.imdbID)">{{movie.Title}}  ({{movie.Year}})</li>
         </div>
 
+      </div>
+
+      <div id='movieInfo'>
+        <h1>Movie Data:</h1>
+        <div ng-repeat="movie in movie">
+          <p>{{movie.Title}}</p>
+          <p>{{movie.Year}}</p>
+          <p>{{movie.Actors}}</p>
+
+        </div>
       </div>
 
 
