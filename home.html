@@ -22,15 +22,18 @@
           </button>
 
       </form>
-      <ul>
-        <li>Title:</li>
-        <li ng-bind="movieTitle"</li>
-          <li>Plot:</li>
-        <li ng-bind="plot"</li>
-          <li>Actors:</li>
-        <li ng-bind="actors"</li>
-      </ul>
-    </div>
+
+
+      <div id='movieList'>
+        <h1>Select a movie:</h1>
+        <h3>Searching for: <span ng-bind="movieCtrl.movieSearch"></span></h3>
+
+        <div ng-repeat="movie in movies" class="movieInList">
+          <a href="#">{{movie.Title}}  ({{movie.Year}})</a>
+        </div>
+
+      </div>
+
 
   </body>
 </html>

@@ -56,15 +56,24 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 25%;
+  margin-top: 1%;
   margin-bottom: 25%;
   transition: 1s ease all;
 }
 
-.searchUp {
-  margin-top: 0;
-}
-
 li {
 	list-style: none;
+}
+
+#movieList {
+	margin-top: 5%;
+	background-color: lightgrey;
+	width: 25%;
+	padding: 10px;
+}
+
+.movieInList {
+	color: white;
+	border: 1px solid yellow;
+	margin-bottom: 10px;
 }
