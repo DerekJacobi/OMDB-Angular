@@ -67,18 +67,21 @@ li {
 img {
 	height: 25%;
 	width: 25%;
+	margin-right: 20px;
 }
 
 #movieList {
 	background-color: lightgrey;
-	width: 25%;
 	padding: 10px;
 	margin-left: 10%;
+	max-width: 300px;
+	min-width: 300px;
 }
 
 #movieInfo {
-	margin-left: 10%;
+	margin-left: 5%;
 	display: flex;
+	margin-top: 40px;
 }
 
 .movieInList {
@@ -89,4 +92,9 @@ img {
 
 #movieDivs {
 	display: flex;
+}
+
+.title {
+	line-height: 2;
+	font-size: xx-large;
 }
