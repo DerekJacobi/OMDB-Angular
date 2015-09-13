@@ -90,6 +90,10 @@ img {
 	margin-bottom: 10px;
 }
 
+.movieInList:hover {
+	border: none;
+}
+
 #movieDivs {
 	display: flex;
 }
