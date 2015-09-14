@@ -68,6 +68,7 @@ img {
 	height: 25%;
 	width: 25%;
 	margin-right: 20px;
+	margin-top: 10px;
 }
 
 h3 {
@@ -90,16 +91,24 @@ h3 {
 }
 
 #movieInfo {
-	margin-left: 5%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	display: flex;
-	margin-top: 40px;
 	width: 60%;
+	border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .movieInList {
 	color: #136CB2;
 	background-color: #f6f6f5;
 	margin-bottom: 10px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .movieInList:hover {

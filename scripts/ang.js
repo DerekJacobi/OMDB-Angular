@@ -4,7 +4,6 @@ var app = angular.module('omdb', []);
 
 app.controller('MovieController', function($scope, $http){
   this.movieSearch = '';
-  currentThis = this;
   this.formAction = function() {
     $http.get('https://www.omdbapi.com/?s=' + this.movieSearch + '&y=&r=json').
       then(function(response){
