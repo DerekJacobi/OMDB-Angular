@@ -21,6 +21,7 @@ $( document ).ready(function() {
    // run function onSearch when movie is clicked
    $('#movieList').click(function(){
      onSearch();
+     $('#movieList').addClass("moveLeft");
    })
 
 });

@@ -71,21 +71,29 @@ img {
 }
 
 h3 {
+	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 #movieList {
 	background-color: lightgrey;
-	margin-left: 10%;
-	max-width: 300px;
-	min-width: 300px;
+	margin-left: 34.3%;
+	margin-right: auto;
+	min-width: 350px;
+	max-width: 350px;
 	text-align: center;
+	transition: 1s ease all;
+}
+
+.moveLeft {
+	margin-left: 100px !important;
 }
 
 #movieInfo {
 	margin-left: 5%;
 	display: flex;
 	margin-top: 40px;
+	width: 60%;
 }
 
 .movieInList {

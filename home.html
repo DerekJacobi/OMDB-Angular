@@ -24,7 +24,7 @@
       </form>
     </div>
 
-      <div id="movieDivs">
+      <div ng-show="movieCtrl.movieSearch" id="movieDivs">
         <!-- Display list of movies from search -->
         <div id='movieList'>
           <h3>Results for: <span ng-bind="movieCtrl.movieSearch"></span></h3>
