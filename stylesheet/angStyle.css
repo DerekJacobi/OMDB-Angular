@@ -70,12 +70,16 @@ img {
 	margin-right: 20px;
 }
 
+h3 {
+	margin-bottom: 10px;
+}
+
 #movieList {
 	background-color: lightgrey;
-	padding: 10px;
 	margin-left: 10%;
 	max-width: 300px;
 	min-width: 300px;
+	text-align: center;
 }
 
 #movieInfo {
@@ -85,13 +89,13 @@ img {
 }
 
 .movieInList {
-	color: white;
-	border: 1px solid yellow;
+	color: #136CB2;
+	background-color: #f6f6f5;
 	margin-bottom: 10px;
 }
 
 .movieInList:hover {
-	border: none;
+	cursor: pointer;
 }
 
 #movieDivs {

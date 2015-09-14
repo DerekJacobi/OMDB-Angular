@@ -27,7 +27,7 @@
       <div id="movieDivs">
         <!-- Display list of movies from search -->
         <div id='movieList'>
-          <h3>Search Results for: <span ng-bind="movieCtrl.movieSearch"></span></h3>
+          <h3>Results for: <span ng-bind="movieCtrl.movieSearch"></span></h3>
 
           <div ng-repeat="movie in movies" class="movieInList">
             <li ng-click="movieCtrl.movieSelect(movie.imdbID)">{{movie.Title}}  ({{movie.Year}})</li>
@@ -35,7 +35,7 @@
 
         </div>
 
-        <div id='movieInfo'>
+        <div ng-show="movie" id='movieInfo'>
             <img ng-src="{{movie.Poster}}"/>
             <div>
               <span class="title">{{movie.Title}}</span>
