@@ -33,10 +33,24 @@ time, mark, audio, video {
   transition: 1s ease all;
   font-size: xx-large;
 	text-align: center;
+	border-radius: 10px;
 }
 
 form {
 	width: 50%;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	-moz-flex-direction: column;
+	-moz-align-items: center;
+	-moz-justify-content: center;
+	-ms-flex-direction: column;
+	-ms-align-items: center;
+	-ms-justify-content: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -52,6 +66,19 @@ form {
 }
 
 .search {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	-moz-flex-direction: column;
+	-moz-align-items: center;
+	-moz-justify-content: center;
+	-ms-flex-direction: column;
+	-ms-align-items: center;
+	-ms-justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,6 +111,7 @@ h3 {
 	max-width: 350px;
 	text-align: center;
 	transition: 1s ease all;
+	border-radius: 10px;
 }
 
 .moveLeft {
@@ -91,6 +119,10 @@ h3 {
 }
 
 #movieInfo {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;
 	margin-left: 2%;
 	margin-right: 2%;
 	margin-top: 20px;
@@ -109,17 +141,69 @@ h3 {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	transition: .5s ease all;
 }
 
 .movieInList:hover {
 	cursor: pointer;
+	background-color: lightgrey;
+	border: 2px solid #f6f6f5;
+	color: #f6f6f5;
 }
 
 #movieDivs {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;
 	display: flex;
+	margin-top: 5%;
 }
 
 .title {
 	line-height: 2;
 	font-size: xx-large;
+}
+
+@media (max-width: 1020px) {
+
+	.movie-title {
+		font-size: x-large;
+	}
+
+}
+
+@media (max-width: 775px) {
+
+	.movie-title {
+		font-size: large;
+	}
+
+}
+
+@media (max-width: 550px) {
+
+	.movie-title {
+		font-size: 1.5rem;
+		width: 100%;
+	}
+
+	#movieList {
+		margin-left: auto;
+		margin-right: auto;
+		height: 100%;
+	}
+
+	.moveLeft {
+		margin-left: auto !important;
+	}
+
+	#movieDivs {
+		flex-direction: column;
+	}
+
+	#movieInfo {
+		width: 90%;
+	}
+
 }
