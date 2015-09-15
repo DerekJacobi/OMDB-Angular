@@ -201,6 +201,9 @@ h3 {
 	}
 
 	#movieDivs {
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
 		flex-direction: column;
 	}
 
