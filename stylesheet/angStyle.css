@@ -25,10 +25,11 @@ time, mark, audio, video {
 }
 
 .movie-title {
+	font-family: 'Corben', Georgia, Times, serif;
   color: white;
   border: none;
   background-color: lightgrey;
-  width: 50%;
+  width: 70%;
   height: 100px;
   transition: 1s ease all;
   font-size: xx-large;
@@ -165,7 +166,7 @@ h3 {
 	font-size: xx-large;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1090px) {
 
 	.movie-title {
 		font-size: x-large;
@@ -176,16 +177,17 @@ h3 {
 @media (max-width: 775px) {
 
 	.movie-title {
-		font-size: large;
+		font-size: 1rem;
 	}
 
 }
 
+/* Cell Phone media */
 @media (max-width: 550px) {
 
 	.movie-title {
-		font-size: 1.5rem;
-		width: 100%;
+		font-size: 1rem;
+		width: 160%;
 	}
 
 	#movieList {
